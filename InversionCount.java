@@ -70,17 +70,17 @@ public class InversionCount {
 
     public static void main(String args[]) {
         int n;
-        //Scanner in = new Scanner(System.in);
-        //n = in.nextInt();
-        n = 1;
+        Scanner in = new Scanner(System.in);
+        n = in.nextInt();
+        //n = 1;
         String[] ip = new String[n];
         int[] ip2 = new int[n];
         for (int i=0; i<n; i++) {
-            //ip[i] = in.next();
-            ip[i] = "001";
+            ip[i] = in.next();
+            //ip[i] = "001";
             ip2[i] = getDecimal(ip[i]);
         }
-        dispIntArray(ip2);
+        //dispIntArray(ip2);
 
         for (int i=0; i<n; i++) {
             int m = ip2[i];
@@ -88,7 +88,7 @@ public class InversionCount {
             for(int j=0; j<arr.length; j++) {
                 arr[j] = j ^ m;
             }
-            dispIntArray(arr);
+            //dispIntArray(arr);
             System.out.println(getInversionCount(arr));
         }
 

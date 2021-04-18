@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.tree;
 
 /**
  * @author mohammed.sh Created on 2021-04-18 https://leetcode.com/problems/distribute-coins-in-binary-tree/
